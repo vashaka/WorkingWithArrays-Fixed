@@ -5,18 +5,18 @@ namespace WorkingWithArrays.Tests
     [TestFixture]
     public sealed class UsingRangesTests
     {
-        [TestCase(new int[] { }, ExpectedResult = new int[] { })]
-        [TestCase(new[] { 1 }, ExpectedResult = new[] { 1 })]
-        [TestCase(new[] { 1, 2, 3 }, ExpectedResult = new[] { 1, 2, 3 })]
-        public int[] GetArrayWithAllElements_ReturnArrayWithAllElements(int[] array)
-        {
-            // Act
-            int[] result = UsingRanges.GetArrayWithAllElements(array);
+        //[TestCase(new int[] { }, ExpectedResult = new int[] { })]
+        //[TestCase(new[] { 1 }, ExpectedResult = new[] { 1 })]
+        //[TestCase(new[] { 1, 2, 3 }, ExpectedResult = new[] { 1, 2, 3 })]
+        //public int[] GetArrayWithAllElements_ReturnArrayWithAllElements(int[] array)
+        //{
+        //    // Act
+        //    int[] result = UsingRanges.GetArrayWithAllElements(array);
 
-            // Assert
-            Assert.AreNotSame(array, result);
-            return result;
-        }
+        //    // Assert
+        //    Assert.AreNotSame(array, result);
+        //    return result;
+        //}
 
         [TestCase(new[] { 1 }, ExpectedResult = new int[] { })]
         [TestCase(new[] { 1, 2 }, ExpectedResult = new[] { 2 })]

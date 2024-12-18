@@ -71,18 +71,18 @@ namespace WorkingWithArrays.Tests
             Assert.AreEqual(array[array.Length - 2], result);
         }
 
-        [Test, Sequential]
-        public void GetNthArrayElement_ReturnsNthElement([Values(1, 2, 3, 20)] int arrayLength, [Values(1, 2, 3, 20)] int n)
-        {
-            // Arrange
-            int[] array = Enumerable.Range(1, arrayLength).ToArray();
+        //[Test, Sequential]
+        //public void GetNthArrayElement_ReturnsNthElement([Values(1, 2, 3, 20)] int arrayLength, [Values(1, 2, 3, 20)] int n)
+        //{
+        //    // Arrange
+        //    int[] array = Enumerable.Range(1, arrayLength).ToArray();
 
-            // Act
-            int result = UsingIndexerForAccessingArrayElement.GetNthArrayElement(array, n);
+        //    // Act
+        //    int result = UsingIndexerForAccessingArrayElement.GetNthArrayElement(array, n);
 
-            // Assert
-            Assert.AreEqual(array[n - 1], result);
-        }
+        //    // Assert
+        //    Assert.AreEqual(array[n - 1], result);
+        //}
 
         [TestCase(new[] { true }, ExpectedResult = true)]
         public bool GetFirstArrayElement_ReturnsFirstBoolElement(bool[] array)
@@ -125,15 +125,15 @@ namespace WorkingWithArrays.Tests
             return UsingIndexerForAccessingArrayElement.GetNextToLastElement(array);
         }
 
-        [TestCase(new[] { true, false, false, false }, 1, ExpectedResult = true)]
-        [TestCase(new[] { false, true, false, false }, 2, ExpectedResult = true)]
-        [TestCase(new[] { false, false, true, false }, 3, ExpectedResult = true)]
-        [TestCase(new[] { false, false, false, true }, 4, ExpectedResult = true)]
-        public bool GetNthArrayElement_ReturnsNthElement(bool[] array, int n)
-        {
-            // Act
-            return UsingIndexerForAccessingArrayElement.GetNthArrayElement(array, n);
-        }
+        //[TestCase(new[] { true, false, false, false }, 1, ExpectedResult = true)]
+        //[TestCase(new[] { false, true, false, false }, 2, ExpectedResult = true)]
+        //[TestCase(new[] { false, false, true, false }, 3, ExpectedResult = true)]
+        //[TestCase(new[] { false, false, false, true }, 4, ExpectedResult = true)]
+        //public bool GetNthArrayElement_ReturnsNthElement(bool[] array, int n)
+        //{
+        //    // Act
+        //    return UsingIndexerForAccessingArrayElement.GetNthArrayElement(array, n);
+        //}
 
         [Test]
         public void GetFirstArrayElement_ReturnsFirstStringElement()

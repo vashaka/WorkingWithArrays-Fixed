@@ -391,7 +391,7 @@ namespace WorkingWithArrays.Tests
         public void CreateDecimalWithFiveElements_ReturnsArrayWithFiveElement()
         {
             // Act
-            decimal[] result = CreatingArray.CreateDecimalWithFiveElements();
+            decimal[] result = CreatingArray.CreateDecimalArrayWithFiveElements();
 
             // Assert
             Assert.NotNull(result);
@@ -403,7 +403,7 @@ namespace WorkingWithArrays.Tests
         public void CreateDecimalWithNineElements_ReturnsArrayWithNineElement()
         {
             // Act
-            decimal[] result = CreatingArray.CreateDecimalWithNineElements();
+            decimal[] result = CreatingArray.CreateDecimalArrayWithNineElements();
 
             // Assert
             Assert.NotNull(result);
